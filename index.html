@@ -331,146 +331,124 @@
       </div>
     </section>
 
-    <!-- CTA / CONTACT -->
-    
-<!-- Feedback / NETWORK module -->
+    <!-- Feedback / NETWORK module -->
 <section id="feedback" class="section-anchor bg-fabero-light py-24">
-  <div class="max-w-5xl mx-auto px-6 lg:px-8">
-    <div class="max-w-3xl">
-      <p class="text-sm font-semibold tracking-[0.18em] uppercase text-fabero-teal mb-4">Help us improve Fabero</p>
-      <h2 class="text-4xl md:text-5xl font-semibold tracking-tight text-fabero-navy">
-        We’re testing our proposition — and we’d value your perspective.
+  <div class="mx-auto max-w-4xl px-5 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-fabero-teal mb-4">
+        Help us improve our website
+      </p>
+      <h2 class="text-4xl font-semibold tracking-tight text-fabero-navy sm:text-5xl">
+        Please share your perspective
       </h2>
-      <p class="mt-6 text-lg leading-8 text-slate-600">
-        If you work with AI transformation, commercial strategy, adoption or change in life sciences,
-        your perspective can help us sharpen what Fabero should offer next.
+      <p class="mt-5 text-lg leading-8 text-slate-600">
+        Please fill out the questions in this section to help us clearly communicate our value proposition.
       </p>
     </div>
 
     <form id="fabero-feedback-form"
-          class="mt-12 bg-white rounded-3xl p-7 md:p-10 shadow-sm border border-slate-200"
+          class="mx-auto mt-12 max-w-3xl space-y-8 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm md:p-10"
           novalidate>
-      <div class="grid md:grid-cols-2 gap-8">
 
-        <div>
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="clarity">
-            1. How clear is Fabero’s proposition to you?
+      <!-- Question 1 -->
+      <fieldset class="space-y-4">
+        <legend class="text-base font-semibold leading-7 text-fabero-navy">
+          1. How clearly does this proposition explain what Fabero does?
+        </legend>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="clarity" value="Very clearly" required class="h-4 w-4 accent-fabero-teal">
+            <span>Very clearly</span>
           </label>
-          <select id="clarity" name="clarity" required
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal">
-            <option value="">Please select</option>
-            <option>1 — Not clear</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 — Very clear</option>
-          </select>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="clarity" value="Quite clearly" class="h-4 w-4 accent-fabero-teal">
+            <span>Quite clearly</span>
+          </label>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="clarity" value="Not very clearly" class="h-4 w-4 accent-fabero-teal">
+            <span>Not very clearly</span>
+          </label>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="clarity" value="Not at all clearly" class="h-4 w-4 accent-fabero-teal">
+            <span>Not at all clearly</span>
+          </label>
         </div>
+      </fieldset>
 
-        <div>
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="relevance">
-            2. How relevant is this proposition to challenges you see in your work?
+      <!-- Question 2 -->
+      <fieldset class="space-y-4">
+        <legend class="text-base font-semibold leading-7 text-fabero-navy">
+          2. How relevant is this proposition to the challenges you or your organisation face when introducing AI into your everyday workflows?
+        </legend>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="relevance" value="Very relevant" required class="h-4 w-4 accent-fabero-teal">
+            <span>Very relevant</span>
           </label>
-          <select id="relevance" name="relevance" required
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal">
-            <option value="">Please select</option>
-            <option>1 — Not relevant</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 — Very relevant</option>
-          </select>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="relevance" value="Quite relevant" class="h-4 w-4 accent-fabero-teal">
+            <span>Quite relevant</span>
+          </label>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="relevance" value="Not very relevant" class="h-4 w-4 accent-fabero-teal">
+            <span>Not very relevant</span>
+          </label>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="relevance" value="Not relevant at all" class="h-4 w-4 accent-fabero-teal">
+            <span>Not relevant at all</span>
+          </label>
         </div>
+      </fieldset>
 
-        <div>
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="differentiation">
-            3. How distinctive does Fabero feel compared with other consultancies you know?
+      <!-- Question 3 -->
+      <fieldset class="space-y-4">
+        <legend class="text-base font-semibold leading-7 text-fabero-navy">
+          3. Does the website provide enough information to make you want to learn more about Fabero?
+        </legend>
+        <div class="space-y-3">
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="learn_more" value="Definitely yes" required class="h-4 w-4 accent-fabero-teal">
+            <span>Definitely yes</span>
           </label>
-          <select id="differentiation" name="differentiation" required
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal">
-            <option value="">Please select</option>
-            <option>1 — Not distinctive</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 — Very distinctive</option>
-          </select>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="learn_more" value="Probably yes" class="h-4 w-4 accent-fabero-teal">
+            <span>Probably yes</span>
+          </label>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="learn_more" value="Probably not" class="h-4 w-4 accent-fabero-teal">
+            <span>Probably not</span>
+          </label>
+          <label class="flex items-center gap-3 text-sm text-slate-700">
+            <input type="radio" name="learn_more" value="Definitely not" class="h-4 w-4 accent-fabero-teal">
+            <span>Definitely not</span>
+          </label>
         </div>
+      </fieldset>
 
-        <div>
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="credibility">
-            4. How credible is Fabero as a partner for this kind of work?
-          </label>
-          <select id="credibility" name="credibility" required
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal">
-            <option value="">Please select</option>
-            <option>1 — Not credible</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 — Very credible</option>
-          </select>
-        </div>
-
-        <div class="md:col-span-2">
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="action">
-            5. After seeing the site, how likely would you be to explore a conversation with Fabero?
-          </label>
-          <select id="action" name="action" required
-                  class="w-full rounded-xl border border-slate-300 px-4 py-3 bg-white text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal">
-            <option value="">Please select</option>
-            <option>1 — Very unlikely</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 — Very likely</option>
-          </select>
-        </div>
-
-        <div class="md:col-span-2">
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="more_likely">
-            What, if anything, would make you more likely to contact Fabero?
-          </label>
-          <textarea id="more_likely" name="more_likely" rows="5"
-                    class="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal"
-                    placeholder="Your perspective..."></textarea>
-        </div>
-
-        <div>
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="role">
-            Your role / area (optional)
-          </label>
-          <input id="role" name="role" type="text"
-                 class="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal"
-                 placeholder="e.g. AI Transformation, Commercial Excellence">
-        </div>
-
-        <div>
-          <label class="block text-sm font-semibold text-fabero-navy mb-2" for="email">
-            Email (optional)
-          </label>
-          <input id="email" name="email" type="email"
-                 class="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-700 focus:outline-none focus:ring-2 focus:ring-fabero-teal"
-                 placeholder="name@company.com">
-        </div>
+      <!-- Question 4 -->
+      <div class="space-y-4">
+        <label for="more_likely" class="block text-base font-semibold leading-7 text-fabero-navy">
+          4. What, if anything, would make you more likely to learn more about Fabero?
+        </label>
+        <p class="text-sm italic text-slate-500">Open comment</p>
+        <textarea id="more_likely" name="more_likely" rows="6"
+                  class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-slate-700 outline-none transition focus:border-fabero-teal focus:ring-2 focus:ring-fabero-teal/20"
+                  placeholder="Your comments..."></textarea>
       </div>
 
-      <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-5">
+      <div class="pt-2">
         <button id="feedback-submit" type="submit"
-                class="inline-flex items-center justify-center rounded-full bg-fabero-teal px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 transition">
+                class="inline-flex w-full items-center justify-center rounded-full bg-fabero-teal px-7 py-3.5 text-sm font-semibold text-white transition hover:opacity-90 sm:w-auto">
           Share your feedback
         </button>
-        <p class="text-xs leading-5 text-slate-500">
-          Your feedback is used to improve Fabero’s proposition and website.
-        </p>
       </div>
 
-      <div id="feedback-success" class="hidden mt-6 rounded-2xl border border-fabero-teal/30 bg-fabero-teal/10 p-5 text-fabero-navy">
+      <div id="feedback-success" class="hidden rounded-2xl border border-fabero-teal/30 bg-fabero-teal/10 p-5 text-fabero-navy">
         <p class="font-semibold">Thank you — your feedback has been received.</p>
         <p class="mt-1 text-sm text-slate-600">Your perspective will help shape the next iteration of Fabero.</p>
       </div>
 
-      <div id="feedback-error" class="hidden mt-6 rounded-2xl border border-red-200 bg-red-50 p-5 text-red-800">
+      <div id="feedback-error" class="hidden rounded-2xl border border-red-200 bg-red-50 p-5 text-red-800">
         <p class="font-semibold">Something went wrong.</p>
         <p class="mt-1 text-sm">Please try again, or contact us directly by email.</p>
       </div>
@@ -478,7 +456,10 @@
   </div>
 </section>
 
-<section id="contact" class="section-anchor bg-fabero-navy">
+<!-- CTA / CONTACT -->
+    
+<!-- CTA / CONTACT -->
+    <section id="contact" class="section-anchor bg-fabero-navy">
       <div class="mx-auto max-w-5xl px-5 py-20 text-center lg:px-8 lg:py-28">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-fabero-green">Ready to move forward?</p>
         <h2 class="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
